@@ -3,7 +3,6 @@ def main(filein):
     lines = file1.read().replace("F","0").replace('B','1').replace('L','0').replace('R','1').split('\n')
     seats=[int(e,2) for e in lines]
     seats.sort()
-    print(seats)
 
     prev, curr = 0,0
     for s in seats:
