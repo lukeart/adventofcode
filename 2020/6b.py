@@ -6,9 +6,7 @@ def main(filein):
         num = len(pp)
         all_answers = "".join(pp)
         all_answers_set = set(all_answers)
-        for a in all_answers_set:
-            count +=1 if all_answers.count(a) == num else 0
-        print(len(list(filter(lambda x: all_answers.count(x) == num, all_answers_set))))
+        count += len(list(filter(lambda x: all_answers.count(x) == num, all_answers_set)))
     print(count)
         
 
